@@ -1,0 +1,5 @@
+<div class="card shadow p-3 ">
+    <h3 class="card-title"> {{miPost?.title}} </h3>
+    <p>{{miPost?.body}} </p>
+    <a class="btn btn-danger" [routerLink]="['/viewpost',miPost?.id]">Vista detalle</a>
+</div>

@@ -1,0 +1,8 @@
+<section class="container mt-3">
+    <h4>OBSERVABLES</h4>
+    <h1>{{onePost?.title}} </h1>
+    <p> {{onePost?.body}} </p>
+    <a class="btn btn-danger mr-3 ms-4" [routerLink]="['/home']">HOME</a>
+    <a class="btn btn-warning mr-3 ms-4" [routerLink]="['/updatepost', onePost?.id]">UPDATE</a>
+    <button class="btn btn-info mx-3" (click)="deletePost(onePost?.id)">DELETE</button>
+</section>
